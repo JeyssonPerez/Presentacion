@@ -1,0 +1,421 @@
+/* Inicio estilos generales */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+.franja{
+    width: 100%;
+    height: 15px;
+    background-color:#009EFA;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 10px;
+    overflow: hidden;
+}
+/* Fin estilos generales */
+
+/* Inicio Header */
+header{
+    width: 100%;
+    margin-left: 20px;
+}
+
+header h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* Fin Header */
+
+/* Inicio Nav */
+
+nav{
+    padding-bottom: 20px;
+}
+
+nav li{
+    display: inline-block;
+    letter-spacing: 1px;
+    padding-right: 10px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+}
+.active{
+    color: #2e82b3;
+}
+
+nav li a:hover{
+    transition: all 300ms;
+    color: rgb(133, 130, 130);
+}
+
+/* Fin Nav */
+
+/* Inicio Contenido central */
+.contenido{
+    width: 100%;
+    margin: auto;
+    padding-top: 40px;
+    background-color: 	#e2e2e2;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.contenido img{
+    display: block;
+    width:40%;
+    float: right;
+    padding-top: 10px;
+}
+.contenido .descripcion{
+    float: left;
+    width: 50%;
+    padding-left: 50px;
+}
+
+.descripcion p{
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+/* Fin Contenido central */
+
+/* Inicio Boton */
+.mirar{
+    display: block;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.descripcion a{
+    text-decoration: none;
+    font-size: 20px;
+    background: #009EFA;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+a:hover{
+    color: #11415d;
+    transition: all 300ms;
+    
+}
+
+/* Fin Boton */
+
+/*  Inicio Formulario */
+
+.container2{
+    background-color:#a3a2a20c ;
+    border-radius: 10px;
+    padding-bottom: 100px;
+}
+
+.formulario{
+    width: 80%;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.formulario h2{
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario input{
+    width: 30.7%;
+    padding: 5px; 
+    border-radius: 7px;
+    border: 2px solid transparent;
+    outline:none;
+    margin-bottom: 10px;
+    background-color: rgb(233, 231, 231);
+    font-size: 18px;
+    transition: all 300ms;
+}
+
+.formulario input:focus{
+    transition: all 300ms;
+    border: 2px solid #2e82b3;
+    outline: none;
+}
+
+.formulario #enviar{
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(112, 112, 112);;
+    transition: all 300ms;
+}
+
+.formulario #enviar:hover{
+    background-color: rgb(192, 189, 189);
+    transition: all 300ms;
+}
+
+.formulario textarea{
+    width: 99%;
+    height: 100px;
+    border-radius: 7px;
+    border: 2px solid transparent;
+    outline:none;
+    background-color: rgb(233, 231, 231);
+    font-size: 18px;
+    transition: all 300ms;
+}
+.formulario textarea:focus{
+    border: 2px solid #2e82b3;
+    outline: none;
+    transition: all 300ms;
+}
+
+
+/*  Fin Formulario */
+
+
+/* Inicio Footer */
+
+.footer{
+    width: 100%;
+    overflow: hidden;
+    color:white;
+    background-color: #0477b9;
+}
+
+.footer .contenidoFooter{
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.footer p{
+    font-size: 15px;
+}
+
+.footer p{
+    color: black;
+}
+
+.footer .logos img{
+    width: 8%;
+}
+
+/* Fin Footer */
+
+/* Inicio responsive */
+
+
+
+
+@media(max-width:1120px){
+    .container {
+        width: 95%;
+    }
+    .formulario input {
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:964px){
+    .mirar{
+        margin-top: 70px;
+    }
+}
+@media(max-width:964px){
+    .descripcion p {
+        padding-top: 25px;
+    }
+}
+
+@media(max-width:908px){
+    .descripcion p {font-size: 18px;
+    }
+}
+
+@media(max-width:844px){
+    .descripcion a{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:827px){
+    .contenido .descripcion{
+        width: 53%;
+    }
+}
+
+@media(max-width:793px){
+    .descripcion p{
+        font-size: 17px;
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:751px){
+    .contenido .descripcion {
+        width: 84%;
+    }
+    .contenido img {
+        padding-top: 45px;
+        margin: auto;
+        float: none;
+    }
+    .footer .contenidoFooter {
+        width: 94%;
+}
+
+
+@media(max-width:685px){
+    header h1 {
+        font-size: 25px;
+    }
+    .formulario input{
+        width: 285px;
+    }
+    .formulario h2{
+        font-size: 20px;
+    }
+    .footer .contenidoFooter {
+        width: 90%;
+    }
+    .footer .logos img {
+        width: 50px;
+    }
+}
+
+@media(max-width:550px){
+    .contenido .descripcion {
+        padding-left: 44px;
+    }
+    .footer .contenidoFooter {
+        width: 89%;
+    }
+}
+
+@media (max-width: 500px){
+    .contenido .descripcion {
+        width: 78%;
+    }
+}
+
+@media (max-width: 426px){
+    .descripcion a {
+        font-size: 14px;
+        padding: 23px;
+    }
+}
+
+@media(max-width:396px){
+    header h1 {
+        font-size: 20px;
+    }
+   
+    .formulario h2{
+        font-size: 17px;
+    }
+    .formulario input {
+        width: 95%;
+    }
+    .formulario input {
+        font-size: 16px;
+    }
+    
+    .formulario textarea{
+        font-size: 16px;
+        }
+}
+
+@media (max-width: 384px){
+    .descripcion a {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 349px){
+    .contenido .descripcion {
+        width: 76%;
+    }
+
+    .descripcion a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 310px){
+    .contenido .descripcion {
+        padding-left: 37px;
+    }
+    .descripcion a{
+        padding: 6px;
+    }
+}
+
+@media(max-width:281px){
+    .footer .contenidoFooter {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 349px){
+    .descripcion a {
+        font-size: 10px;
+    }
+
+}
+
+@media(max-width:274px){
+    header h1 {
+        font-size: 17px;
+    }
+    .formulario h2{
+        font-size: 16px;
+    }
+    .formulario input {
+        font-size: 14px;
+    }
+    
+    .formulario textarea{
+        font-size: 14px;
+        }
+}
+
+@media(max-width:254px){
+    header h1 {
+        font-size: 16px;
+    }
+    .formulario h2{
+        font-size: 15px;
+    }
+    .formulario input {
+        font-size: 13px;
+    }
+    
+    .formulario textarea{
+        font-size: 13px;
+        }
+    }
+}
+/* Fin responsive */
